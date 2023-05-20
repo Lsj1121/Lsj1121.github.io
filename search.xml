@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>java初学笔记&amp;520</title>
+      <link href="/2023/05/19/STUDY/java%E7%AC%94%E8%AE%B0/"/>
+      <url>/2023/05/19/STUDY/java%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<p>没有标题，简单随笔而已。</p><p>标识符：字母、数字、下划线、不能是关键字、区分大小写</p><p>单个单词小写，多个单词除第一个单词首字母小写，其余均大写</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输出：System.out.println();</span><br><span class="line">输入输出：</span><br><span class="line">Scanner a = new Scanner(System.in);</span><br><span class="line">double x  =a.nextDouble();</span><br><span class="line">System.out.println(x);</span><br></pre></td></tr></table></figure><p>数组定义</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">String x[] = &#123;&quot;nihao&quot;,&quot;shijie&quot;&#125;;</span><br><span class="line">System.out.println(x[0]+&quot;,&quot;+x[1]);</span><br></pre></td></tr></table></figure><p>类</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">class 类名&#123;</span><br><span class="line">类体</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>类体由两部分构成：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">变量的声明：成员变量、局部变量，在方法中，局部变量覆盖成员变量</span><br><span class="line">方法的定义：</span><br><span class="line">float read&#123;</span><br><span class="line">方法体的内容</span><br><span class="line">&#125;</span><br><span class="line">不需要返回值是，类型必须为void</span><br><span class="line"></span><br><span class="line">方法：类方法（static）与实例方法</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>子类</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">class 子类名 extends 父类名</span><br></pre></td></tr></table></figure><p>final不能有子类 </p><p>彩蛋：<br>这是一串神秘的代码，也许你能发现什么呢</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">--.--..-.-....-/--.....----..--/-.-..-...--..../-.-.-....-..---/-.--.----...--./----..........-/--..--...-.----/-...------.--..-/--..-.-.---.-../-.-..-----..-.-/-...-.----.---.-</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> java&amp;520 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>2023HVV面试</title>
+      <link href="/2023/04/29/HVV/2023/"/>
+      <url>/2023/04/29/HVV/2023/</url>
+      
+        <content type="html"><![CDATA[<h2 id="HVV-面经"><a href="#HVV-面经" class="headerlink" title="HVV 面经"></a>HVV 面经</h2><p>前两周参加了一场森烨的面试，这是 第一次面试，就 导致面的太紧张了，但是还是总结一下，以示参考。</p><p>面试的时候面试官都是对着简历发问，所以简历一定要写自己熟悉的东西，再不济也能说上一二。</p><h3 id="自我介绍"><a href="#自我介绍" class="headerlink" title="自我介绍"></a>自我介绍</h3><p>刚开始统一要求自我介绍。</p><p>这里一般是提前写好稿子，简单介绍自己的学校，擅长的方面以及护网经历即可。一定一定要沉着冷静、大方一点。</p><h3 id="Linux-操作"><a href="#Linux-操作" class="headerlink" title="Linux 操作"></a>Linux 操作</h3><p>问：Linux 如何创建计划任务？</p><p>答：使用 corntab 命令。</p><p>问：corntab 的计划任务列表存储在哪里？</p><p>答：位于 &#x2F;etc&#x2F;corntab 目录。</p><p>问：Linux 如何查看端口开放情况？</p><p>答：可以使用 netstat -anp | grep 端口号 命令来查看端口号对应的进程和状态。</p><h3 id="应急响应"><a href="#应急响应" class="headerlink" title="应急响应"></a>应急响应</h3><p>这部分忘了，大概也是也写操作指令之类的。</p><p>问：使用过的安全设备。</p><p>答：绿盟 NF、深信服 AF、天融信昆仑系列、深信服 NGAF、科来网络回溯分析系统、360 天擎</p><h3 id="中间件"><a href="#中间件" class="headerlink" title="中间件"></a>中间件</h3><p>问：status 和 weblogic 的流量如何区分？</p><p>答：请求URL中包含.action或.do, 这是struts2的默认请求后缀。weblogic的默认请求后缀是.jsp或.html；请求中包含struts2的默认参数,如:action,method等。weblogic的请求参数比较随意,没有固定模式；</p><h3 id="前端相关"><a href="#前端相关" class="headerlink" title="前端相关"></a>前端相关</h3><p>问：你知道原型链污染吗？</p><p>答：原型链污染（Prototype Pollution）是一种常见的安全漏洞，它会导致攻击者能够修改一个对象的原型，从而影响到应用程序的其他部分。这个漏洞在JavaScript中比较常见。在JavaScript中，每个对象都有一个原型，它是一个指向另一个对象的引用。当你试图访问一个对象的属性时，如果这个对象本身没有这个属性，JavaScript会沿着原型链向上查找，直到找到该属性或者到达原型链的顶端为止。攻击者可以通过在输入数据中注入恶意代码，来修改原型链上的对象，从而修改应用程序的行为。例如，攻击者可以将Object.prototype中的某个方法更改为恶意代码，使得应用程序中所有的对象都继承了这个恶意方法。这样，攻击者就可以在应用程序中执行任意代码，甚至获取敏感信息。</p><p>问：如何避免原型链污染？</p><p>答：为了避免原型链污染，开发人员应该始终使用Object.hasOwnProperty()来检查一个对象是否真正拥有某个属性，而不是依赖原型链。此外，开发人员应该对输入数据进行严格的验证和过滤，以防止恶意代码的注入。最后，应该定期更新和升级应用程序的依赖库，以确保使用的库没有原型链污染漏洞。</p><p>问：XSS 可以达到哪些效果？</p><p>答：前端挖矿、模拟登录页、劫持用户口令等。</p><h3 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h3><p>问：include和require的区别？</p><p>答：include 可以在脚本的任何位置进行调用，而 require 必须在脚本的开头进行调用。此外，require引入的模块必定会在运行时引用，而include是按需加载。</p><p>问：知道GPC吗？</p><p>答：是的。GPC是 PHP 中一个已废弃的安全特性，它会自动对 GET、POST、Cookie 数据中的特殊字符（如单引号、双引号、反斜线等）进行转义处理。当 GPC 开启时，可能会影响某些 SQL 注入攻击的执行。但是，绕过 GPC 仍然可以进行 SQL 注入攻击。</p><h3 id="SQL"><a href="#SQL" class="headerlink" title="SQL"></a>SQL</h3><p>问：假设开启了特殊字符过滤，怎么办？</p><p>答：1. 使用数字类型的数据（避免使用引号）；</p><p>问：sql 如何写 shell？</p><p>答：</p><h3 id="其他杂项"><a href="#其他杂项" class="headerlink" title="其他杂项"></a>其他杂项</h3><p>问：2019-0708这个漏洞，检测到了但无法利用，为什么？</p><p>答：版本不匹配。这个漏洞只影响Exchange 2010 SP3 Update Rollup 12 到 Exchange 2019 CU4之间的版本,如果目标系统的Exchange版本不在这个范围内,无法利用；已经打了补丁。如果目标系统已经应用了Microsoft发布的安全更新,这个漏洞已经被修复,无法利用；防火墙或WAF拦截。如果目标系统启用了防火墙或WAF,并且规则已经更新到可以检测和拦截这个漏洞利用,会无法利用</p><p>问：shiro 550 和 721 版本在反序列化漏洞上的主要区别？</p><p>答：shiro 550 版本只需要一个恶意构造的 rememberMe cookie 即可触发反序列化漏洞；shiro 721 版本需要先登录,设置 rememberMe&#x3D;true,然后发送恶意构造的 rememberMe cookie 才能触发反序列化漏洞。另外，shiro 550 版本反序列化的是 ShiroRememberMeManager 类；shiro 721 版本反序列化的是 ShiroRememberMeManager$RememberMeToken 类。（Shiro-550 是 Apache Shiro 框架中的一个反序列化漏洞，由于 AES 加密的 key 硬编码在源码中，攻击者可以通过泄露密钥来构造恶意的序列化数据，从而实现远程代码执行等攻击）</p><p>问：你知道哪些恶意流量分析工具？</p><p>答：Wireshark Brim TShark</p><p>问：Win10 UAC 如何绕过？</p><p>答：</p><h3 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h3><p>问：知道 Java 反序列化吗？</p><p>答：。。。</p><h3 id="运维"><a href="#运维" class="headerlink" title="运维"></a>运维</h3><p>问：如何防范DDOS？</p><p>答：增加带宽和加强服务器性能。这可以让服务器有更大的流量处理能力,减少被攻击时的影响；使用DDOS防护服务。像Cloudflare、Incapsula、Akamai等服务可以有效防御DDOS攻击,他们可以过滤恶意流量和只让合法流量通过；配置防火墙和路由器。可以设置规则过滤来自某些IP地址或国家&#x2F;地区的流量。也可以设置SYN Flood防护等；监控流量和服务。当发生DDOS攻击时,可以及时发现服务性能下降和大量异常流。</p><p>问：知道SCRF吗？</p><p>答：嗯。这是服务端虚假请求，可以用来access外网获取不到的主机。</p><p>问：假设你发现服务器有异常登录情况，解决问题之后，如何进一步排查隐患？</p><p>答：</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 2023hvv </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>序列化的python提交脚本</title>
       <link href="/2023/04/29/CTF/das_%E5%BA%8F%E5%88%97%E5%8C%96python/"/>
       <url>/2023/04/29/CTF/das_%E5%BA%8F%E5%88%97%E5%8C%96python/</url>
@@ -34,25 +72,6 @@
         <tags>
             
             <tag> CTF jinja_ssti </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>2023HVV面试</title>
-      <link href="/2023/04/29/HVV/2023/"/>
-      <url>/2023/04/29/HVV/2023/</url>
-      
-        <content type="html"><![CDATA[<h2 id="HVV-面经"><a href="#HVV-面经" class="headerlink" title="HVV 面经"></a>HVV 面经</h2><p>前两周参加了一场森烨的面试，这是 第一次面试，就 导致面的太紧张了，但是还是总结一下，以示参考。</p><p>面试的时候面试官都是对着简历发问，所以简历一定要写自己熟悉的东西，再不济也能说上一二。</p><h3 id="自我介绍"><a href="#自我介绍" class="headerlink" title="自我介绍"></a>自我介绍</h3><p>刚开始统一要求自我介绍。</p><p>这里一般是提前写好稿子，简单介绍自己的学校，擅长的方面以及护网经历即可。一定一定要沉着冷静、大方一点。</p><h3 id="Linux-操作"><a href="#Linux-操作" class="headerlink" title="Linux 操作"></a>Linux 操作</h3><p>问：Linux 如何创建计划任务？</p><p>答：使用 corntab 命令。</p><p>问：corntab 的计划任务列表存储在哪里？</p><p>答：位于 &#x2F;etc&#x2F;corntab 目录。</p><p>问：Linux 如何查看端口开放情况？</p><p>答：可以使用 netstat -anp | grep 端口号 命令来查看端口号对应的进程和状态。</p><h3 id="应急响应"><a href="#应急响应" class="headerlink" title="应急响应"></a>应急响应</h3><p>这部分忘了，大概也是也写操作指令之类的。</p><p>问：使用过的安全设备。</p><p>答：绿盟 NF、深信服 AF、天融信昆仑系列、深信服 NGAF、科来网络回溯分析系统、360 天擎</p><h3 id="中间件"><a href="#中间件" class="headerlink" title="中间件"></a>中间件</h3><p>问：status 和 weblogic 的流量如何区分？</p><p>答：请求URL中包含.action或.do, 这是struts2的默认请求后缀。weblogic的默认请求后缀是.jsp或.html；请求中包含struts2的默认参数,如:action,method等。weblogic的请求参数比较随意,没有固定模式；</p><h3 id="前端相关"><a href="#前端相关" class="headerlink" title="前端相关"></a>前端相关</h3><p>问：你知道原型链污染吗？</p><p>答：原型链污染（Prototype Pollution）是一种常见的安全漏洞，它会导致攻击者能够修改一个对象的原型，从而影响到应用程序的其他部分。这个漏洞在JavaScript中比较常见。在JavaScript中，每个对象都有一个原型，它是一个指向另一个对象的引用。当你试图访问一个对象的属性时，如果这个对象本身没有这个属性，JavaScript会沿着原型链向上查找，直到找到该属性或者到达原型链的顶端为止。攻击者可以通过在输入数据中注入恶意代码，来修改原型链上的对象，从而修改应用程序的行为。例如，攻击者可以将Object.prototype中的某个方法更改为恶意代码，使得应用程序中所有的对象都继承了这个恶意方法。这样，攻击者就可以在应用程序中执行任意代码，甚至获取敏感信息。</p><p>问：如何避免原型链污染？</p><p>答：为了避免原型链污染，开发人员应该始终使用Object.hasOwnProperty()来检查一个对象是否真正拥有某个属性，而不是依赖原型链。此外，开发人员应该对输入数据进行严格的验证和过滤，以防止恶意代码的注入。最后，应该定期更新和升级应用程序的依赖库，以确保使用的库没有原型链污染漏洞。</p><p>问：XSS 可以达到哪些效果？</p><p>答：前端挖矿、模拟登录页、劫持用户口令等。</p><h3 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h3><p>问：include和require的区别？</p><p>答：include 可以在脚本的任何位置进行调用，而 require 必须在脚本的开头进行调用。此外，require引入的模块必定会在运行时引用，而include是按需加载。</p><p>问：知道GPC吗？</p><p>答：是的。GPC是 PHP 中一个已废弃的安全特性，它会自动对 GET、POST、Cookie 数据中的特殊字符（如单引号、双引号、反斜线等）进行转义处理。当 GPC 开启时，可能会影响某些 SQL 注入攻击的执行。但是，绕过 GPC 仍然可以进行 SQL 注入攻击。</p><h3 id="SQL"><a href="#SQL" class="headerlink" title="SQL"></a>SQL</h3><p>问：假设开启了特殊字符过滤，怎么办？</p><p>答：1. 使用数字类型的数据（避免使用引号）；</p><p>问：sql 如何写 shell？</p><p>答：</p><h3 id="其他杂项"><a href="#其他杂项" class="headerlink" title="其他杂项"></a>其他杂项</h3><p>问：2019-0708这个漏洞，检测到了但无法利用，为什么？</p><p>答：版本不匹配。这个漏洞只影响Exchange 2010 SP3 Update Rollup 12 到 Exchange 2019 CU4之间的版本,如果目标系统的Exchange版本不在这个范围内,无法利用；已经打了补丁。如果目标系统已经应用了Microsoft发布的安全更新,这个漏洞已经被修复,无法利用；防火墙或WAF拦截。如果目标系统启用了防火墙或WAF,并且规则已经更新到可以检测和拦截这个漏洞利用,会无法利用</p><p>问：shiro 550 和 721 版本在反序列化漏洞上的主要区别？</p><p>答：shiro 550 版本只需要一个恶意构造的 rememberMe cookie 即可触发反序列化漏洞；shiro 721 版本需要先登录,设置 rememberMe&#x3D;true,然后发送恶意构造的 rememberMe cookie 才能触发反序列化漏洞。另外，shiro 550 版本反序列化的是 ShiroRememberMeManager 类；shiro 721 版本反序列化的是 ShiroRememberMeManager$RememberMeToken 类。（Shiro-550 是 Apache Shiro 框架中的一个反序列化漏洞，由于 AES 加密的 key 硬编码在源码中，攻击者可以通过泄露密钥来构造恶意的序列化数据，从而实现远程代码执行等攻击）</p><p>问：你知道哪些恶意流量分析工具？</p><p>答：Wireshark Brim TShark</p><p>问：Win10 UAC 如何绕过？</p><p>答：</p><h3 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h3><p>问：知道 Java 反序列化吗？</p><p>答：。。。</p><h3 id="运维"><a href="#运维" class="headerlink" title="运维"></a>运维</h3><p>问：如何防范DDOS？</p><p>答：增加带宽和加强服务器性能。这可以让服务器有更大的流量处理能力,减少被攻击时的影响；使用DDOS防护服务。像Cloudflare、Incapsula、Akamai等服务可以有效防御DDOS攻击,他们可以过滤恶意流量和只让合法流量通过；配置防火墙和路由器。可以设置规则过滤来自某些IP地址或国家&#x2F;地区的流量。也可以设置SYN Flood防护等；监控流量和服务。当发生DDOS攻击时,可以及时发现服务性能下降和大量异常流。</p><p>问：知道SCRF吗？</p><p>答：嗯。这是服务端虚假请求，可以用来access外网获取不到的主机。</p><p>问：假设你发现服务器有异常登录情况，解决问题之后，如何进一步排查隐患？</p><p>答：</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 2023hvv </tag>
             
         </tags>
       
